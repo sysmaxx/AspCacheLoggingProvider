@@ -25,7 +25,7 @@ namespace LoggingProvider
         {
 
             services.AddCacheLoggerService(
-                c => new CacheLoggerServiceConfiguration { LogLevel = LogLevel.Information, LogSize = 1000 });
+                c => { c.LogLevel = LogLevel.Information; c.LogSize = 100; });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

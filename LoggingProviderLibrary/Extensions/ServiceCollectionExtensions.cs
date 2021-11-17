@@ -10,8 +10,7 @@ namespace LoggingProviderLibrary.Extensions
     {
         public static void AddCacheLoggerService(
             this IServiceCollection services, 
-            Action<CacheLoggerServiceConfiguration> options = null
-            )
+            Action<CacheLoggerServiceConfiguration> options = null)
         {
             var _options = new CacheLoggerServiceConfiguration();
 
